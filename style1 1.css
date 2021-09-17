@@ -1,0 +1,257 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto Mono', monospace;
+}
+.header{
+	width: 100%;
+	display: flex;
+	padding: 0 100px;
+	box-sizing: border-box;
+	position: absolute;
+	z-index: 10;
+}
+.logo{
+	width: 20%;
+}
+.logo a{
+	color: whitesmoke;
+	text-decoration: none;
+	letter-spacing: 2px;
+}
+.menu{
+	width: 80%;
+}
+.menu ul{
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+}
+.menu ul li{
+	margin: 0 20px;
+}
+.menu ul li a{
+	text-decoration: none;
+	color: white;
+}
+.menu ul li a:hover{
+	color: red;
+}
+.banner{
+	height: 100vh;
+	position: relative;
+}
+.banner video{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.text-box{
+	background:rgba(0,0,0,0.58);
+	position: absolute;
+	top: 20%;
+	left: 22%;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 50px 50px;
+}
+.glow {
+   font-family: cursive;
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+.text-box h3{
+	font-size: 20px;
+	letter-spacing: 20px;
+	margin: 20px 0;
+}
+.text-box p{
+	font-size: 20px;
+	letter-spacing: 20px;
+	margin: 20px 0;
+}
+.text-box a{
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+	padding: 20px 40px;
+	letter-spacing: 20px;
+	border: 1px solid white;
+}
+.text-box a:hover{
+	background: white;
+	color: black;
+}
+.hinh {
+  text-align: center;
+  padding: 32px;
+}
+#mySidenav a {
+  position: fixed;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 200px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 80px;
+  background-color: pink;
+}
+
+#blog {
+  top: 140px;
+  background-color: #8DC6DD;
+}
+
+#projects {
+  top: 200px;
+  background-color: #9CE8CD;
+}
+
+#contact {
+  top: 260px;
+  background-color: #E5B482;
+}
+.flip-card {
+  background-color: pink;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+	margin: 0 auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+.ab1{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.sk1{
+	margin-top: 100px;
+}
+.skills {
+	margin-top: 100px;
+  display: grid;
+  grid-gap: 15px;
+}
+@media screen and (min-width: 576px) {
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.skills__item {
+  display: flex;
+  justify-content: center;
+}
+.skills canvas {
+  width: 200px;
+  height: 200px;
+}
+.skills figcaption {
+  margin-top: 10px;
+  font-weight: 500;
+  text-align: center;
+}
+.contacts{
+	padding-top: 100px;
+}
+.ctt1{
+	margin-bottom: 100px;
+}
+.gai{
+	width: 500px;
+	height: auto;
+	margin: 0 auto;
+	padding-bottom: 200px;
+}
+.boe{
+	margin-left: 180px;
+	width: 300px;
+	height: 100px;
+}
+.boe a{
+		color: black;
+	font-size: 20px
+}
+.boz{
+	width: 650px;
+	height: 100px;
+	display: flex;
+}
+.boz1{
+	width: 300px;
+	height: 100px;
+}
+.ngan{
+	width: 50px;
+}
+.boe a:hover{
+	color: red;
+}
+.boz1 a:hover{
+	color: red;
+}
+.boz1 a{
+			color: black;
+	font-size: 20px
+}
